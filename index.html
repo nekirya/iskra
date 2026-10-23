@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f3f1">
+
+    <title>ИСКРА — Больше чем кофе</title>
+    <meta name="description" content="Искра — уютное пространство в Ангарске. Кофе, люди и особая атмосфера.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <span class="logo-main">ИСКРА</span>
+                <span class="logo-sub">кофе и люди</span>
+            </a>
+
+            <nav class="nav">
+                <a href="#home" class="nav-link active">Главная</a>
+                <a href="#menu" class="nav-link">Меню</a>
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="socials">
+                    <a href="#" aria-label="VK">VK</a>
+                    <a href="#" aria-label="Instagram">MAX</a>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+                    <div class="theme-toggle-track">
+                        <span class="theme-toggle-icon sun">☀</span>
+                        <span class="theme-toggle-icon moon">☾</span>
+                    </div>
+                    <div class="theme-toggle-thumb"></div>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#home" class="nav-link">Главная</a>
+        <a href="#menu" class="nav-link">Меню</a>
+        <a href="#about" class="nav-link">О нас</a>
+        <a href="#contact" class="nav-link">Контакты</a>
+        <div class="socials">
+            <a href="#">VK</a>
+            <a href="#">MAX</a>
+        </div>
+    </nav>
+
+    <!-- Hero: ч/б фото с плёночным зерном, как на референсах -->
+    <section class="hero grain" id="home">
+        <div class="hero-background">
+            <img src="images/hero.jpg" alt="ИСКРА — кофейня">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">ИСКРА</h1>
+            <p class="hero-subtitle">больше чем кофе</p>
+        </div>
+    </section>
+
+    <!-- Menu: типографическое меню в 4 колонки, как на референсе ref67 -->
+    <section class="section menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Меню</span>
+                <h2 class="section-title">Наше меню</h2>
+                <p class="section-desc">
+                    Мы варим кофе, который объединяет людей. Всё готовим вручную —
+                    от эспрессо до авторских рафов.
+                </p>
+            </div>
+
+            <div class="menu-columns">
+                <!-- Кофе -->
+                <div class="menu-column">
+                    <h3 class="menu-column-title">Кофе</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Эспрессо</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">120 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Чистый и насыщенный · 30 мл</p>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Американо</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">150 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Лёгкий и бодрящий · 200 мл</p>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Фильтр</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">140 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Сваренный вручную · 250 мл</p>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Капучино</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">180 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Идеальный баланс · 300 мл</p>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Латте</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">180 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Нежный и сливочный · 300 мл</p>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Айс-латте</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">200 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Освежающая классика · 300 мл</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Авторские -->
+                <div class="menu-column">
+                    <h3 class="menu-column-title">Авторские</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Раф</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">220 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Нежный и особенный · 300 мл</p>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Раф лавандовый</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">240 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">С ароматом лаванды · 300 мл</p>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Флэт уайт</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">210 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Двойной эспрессо, тонкая пена · 200 мл</p>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Карамельный латте</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">230 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">С домашней карамелью · 300 мл</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Не кофе -->
+                <div class="menu-column">
+                    <h3 class="menu-column-title">Не кофе</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Горячий шоколад</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">190 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Насыщенный и согревающий · 300 мл</p>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Какао</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">170 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Классика детства · 300 мл</p>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Матча-латте</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">260 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Японская церемония в чашке · 300 мл</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Чай -->
+                <div class="menu-column">
+                    <h3 class="menu-column-title">Чай</h3>
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Ягодный чай</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">200 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Натуральный ягодный микс · 400 мл</p>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Чёрный с чабрецом</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">160 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Классика с горным чабрецом · 400 мл</p>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Зелёный жасмин</span>
+                                <span class="menu-item-dots"></span>
+                                <span class="menu-item-price">160 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Лёгкий и цветочный · 400 мл</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Desserts: вторая секция в 4 колонки, как на референсе ref67 -->
+    <section class="section desserts-section" id="desserts">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">К кофе и чаю</span>
+                <h2 class="section-title">Десерты</h2>
+            </div>
+
+            <div class="desserts-grid">
+                <article class="dessert-item">
+                    <h3 class="dessert-name">Чизкейк</h3>
+                    <p class="dessert-desc">Классический, на песочной основе, со сливочным сыром.</p>
+                    <span class="dessert-price">180 ₽</span>
+                </article>
+
+                <article class="dessert-item">
+                    <h3 class="dessert-name">Печенье с шоколадом</h3>
+                    <p class="dessert-desc">Мягкое, с крупными кусочками тёмного шоколада.</p>
+                    <span class="dessert-price">90 ₽</span>
+                </article>
+
+                <article class="dessert-item">
+                    <h3 class="dessert-name">Круассан</h3>
+                    <p class="dessert-desc">Слоёный, с хрустящей корочкой и мягким сердцем.</p>
+                    <span class="dessert-price">130 ₽</span>
+                </article>
+
+                <article class="dessert-item">
+                    <h3 class="dessert-name">Панкейк</h3>
+                    <p class="dessert-desc">Пышный, с кленовым сиропом и свежими ягодами.</p>
+                    <span class="dessert-price">190 ₽</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About: ч/б фон с зерном, тёмный силуэт-капля и текст — как на картинке 123 -->
+    <section class="about-section grain-light" id="about">
+        <div class="about-background">
+            <img src="images/hero.jpg" alt="">
+        </div>
+        <div class="about-overlay"></div>
+        <div class="container about-content">
+            <div class="about-visual" aria-hidden="true">
+                <svg class="about-drop" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path class="about-drop-shape" d="M50 98 C 24 84, 6 62, 6 42 C 6 20, 25 6, 50 6 C 75 6, 94 20, 94 42 C 94 62, 76 84, 50 98 Z"/>
+                    <ellipse class="about-drop-highlight" cx="50" cy="42" rx="10" ry="22"/>
+                </svg>
+            </div>
+            <div class="about-text">
+                <span class="section-label">О нас</span>
+                <h2 class="section-title">Искра, которая<br>объединяет людей</h2>
+                <p class="about-text-paragraph">
+                    ИСКРА — это не просто кофейня. Это место, где хороший кофе встречается
+                    с тёплыми разговорами, где незнакомцы становятся друзьями, а каждая
+                    чашка рассказывает свою историю. Мы верим, что лучшие моменты
+                    происходят, когда люди собираются вместе.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">года вместе</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">чашек кофе</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">с любовью</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-main">
+                    <span class="section-label">Где нас найти</span>
+                    <h2 class="section-title">Россия</h2>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <span class="contact-info-label">Адрес</span>
+                        <p class="contact-info-value">Центральный рынок</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-label">Часы работы</span>
+                        <p class="contact-info-value">Ежедневно 10:00 — 22:00</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <span class="contact-info-label">Соцсети</span>
+                        <div class="contact-socials">
+                            <a href="#">VK</a>
+                            <a href="#">MAX</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacts">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">
+                    <span class="footer-logo-main">ИСКРА</span>
+                    <span class="footer-logo-sub">кофе и люди</span>
+                </a>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#home" class="footer-nav-link">Главная</a>
+                <a href="#menu" class="footer-nav-link">Меню</a>
+                <a href="#about" class="footer-nav-link">О нас</a>
+                <a href="#contact" class="footer-nav-link">Контакты</a>
+            </nav>
+
+            <div class="footer-socials">
+                <a href="#" aria-label="VK">VK</a>
+                <a href="#" aria-label="Instagram">MAX</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="footer-copy">© 2026 ИСКРА. Все права защищены. Данный сайт является независимым демонстрационным проектом и не является официальным сайтом организации Искры. Проект создан в ознакомительных целях и не осуществляет приём реальных заказов.               Связь: dksrussia@yandex.ru</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
